@@ -22,7 +22,7 @@ function ProductModal({ oldProduct }) {
     setProduct({ ...product, [event.target.name]: event.target.value });
 
   const handleImage = (event) => 
-    setProduct({...product, [event.target.name]: event.target.files[0]});
+  setProduct({...product, image: event.target.files[0]});
     
 
   const handleSubmit = (event) => {
